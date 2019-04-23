@@ -2,19 +2,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int n = 5;
-        int counter = 1; //aparent in exemplu numarul initial e numerotat ca operatie asa ca m-am conformat
-
-        while (true) {
-            if(n == 1){
-                break;
-            } else if(n%2 == 0){
-                n = n/2;
-            }else{
-                n = 3*n+1;
+        int i;
+        int max = -1;
+        int[] vector = new int[]{1,3,5,12,634,32,33,55,23,0,9};
+        for(i=0;i<vector.length; i++){
+            if(vector[i] > max && vector[i]%2 == 1){
+                max = vector[i];
             }
-            counter++;
         }
-        System.out.print(counter);
+        if(max == -1){
+            System.out.println("no");
+        }else
+            System.out.println(max);
+
+
     }
 }
