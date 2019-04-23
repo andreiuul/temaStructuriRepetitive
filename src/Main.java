@@ -4,8 +4,8 @@ public class Main {
 
         int i;
         int n = 7;
-        for(i=n;i>0;i--){
-            System.out.print(i+ " ");
+        for(i=0;i<n;i++){
+            System.out.print((2*i+1)+ " ");
         }
 }
 }
