@@ -3,10 +3,13 @@ public class Main {
     public static void main(String[] args) {
 
        int n = 5;
-       int i;
-       for(i = 0; i < n; i++){
-           System.out.print("go ");
+       int ok = 0;
+
+       while(true){
+           if(ok<n){
+               System.out.println("going");
+               ok++;
+           }
        }
-       System.out.print("gata"); // ?
     }
 }
