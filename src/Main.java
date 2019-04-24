@@ -4,18 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-       int n = 21;
-       int m = 22;
-       int nInv = 0;
-
-        while(n != 0){
-              nInv = n%10 + nInv*10;
-              n/=10;
-        }
-        if(nInv == m){
-            System.out.println("true");
-        }else{
-            System.out.println("false");
-        }
+       int n = 1234;
+       int sum = 0;
+       n /= 10;
+       while(n != 0){
+           sum += n%10;
+           n /= 100;
+       }
+        System.out.println(sum);
     }
 }
