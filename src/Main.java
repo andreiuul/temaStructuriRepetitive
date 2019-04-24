@@ -5,12 +5,20 @@ public class Main {
     public static void main(String[] args) {
 
        int n = 1234;
-       int sum = 0;
-       n /= 10;
+       int m = 0;
+       int sumPar = 0;
+       int sumImpar = 0;
+       int position = 0;
+
        while(n != 0){
-           sum += n%10;
-           n /= 100;
+           if(position % 2 == 0) {
+               m += n % 10;
+           }else {
+               m -= n % 10;
+           }
+           n /= 10;
+           position++;
        }
-        System.out.println(sum);
+        System.out.println(m);
     }
 }
