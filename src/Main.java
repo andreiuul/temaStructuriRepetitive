@@ -2,18 +2,80 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int i = 0;
-        int sum = 0;
-        int count = 0;
-        int[] numbers = new int[]{2, 5, 55, 64, 8,17, 31, 32, 2, 0, 17, 24};
+        int n = 5;
 
-        while (count < 5){
-            if(numbers[i] % 2 == 0) {
-                sum += numbers[i];
-                count++;
+        //v1
+        if(n>=0 && n<=9){
+            if(n == 0){
+                System.out.println("zero");
+            }else if(n == 1){
+                System.out.println("unu");
+            }else if(n == 2){
+                System.out.println("doi");
+            }else if(n == 3){
+                System.out.println("trei");
+            }else if(n == 4){
+                System.out.println("patru");
+            }else if(n == 5){
+                System.out.println("cinci");
+            }else if(n == 6){
+                System.out.println("sase");
+            }else if(n == 7){
+                System.out.println("sapte");
+            }else if(n == 8){
+                System.out.println("opt");
+            }else if(n == 9){
+                System.out.println("noua");
             }
-            i++;
+        }else{
+            System.out.println("numar gresit");
         }
-        System.out.println(sum);
+
+        //v2
+        switch(n){
+            case 0:{
+                System.out.println("zero");
+                break;
+            }
+            case 1:{
+                System.out.println("unu");
+                break;
+            }
+            case 2:{
+                System.out.println("doi");
+                break;
+            }
+            case 3:{
+                System.out.println("trei");
+                break;
+            }
+            case 4:{
+                System.out.println("patru");
+                break;
+            }
+            case 5:{
+                System.out.println("cinci");
+                break;
+            }
+            case 6:{
+                System.out.println("sase");
+                break;
+            }
+            case 7:{
+                System.out.println("sapte");
+                break;
+            }
+            case 8:{
+                System.out.println("opt");
+                break;
+            }
+            case 9: {
+                System.out.println("noua");
+                break;
+            }
+            default:{
+                System.out.println("numar gresit");
+            }
+        }
     }
 }
