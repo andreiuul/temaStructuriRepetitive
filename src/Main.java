@@ -2,13 +2,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int n = 7;
-        int i,j;
-        for(i=1;i<=n;i++) {
-            for (j = 1; j <= i; j++) {
-                System.out.print(j + " ");
+        int i = 0;
+        int sum = 0;
+        int count = 0;
+        int[] numbers = new int[]{2, 5, 55, 64, 8,17, 31, 32, 2, 0, 17, 24};
+
+        while (count < 5){
+            if(numbers[i] % 2 == 0) {
+                sum += numbers[i];
+                count++;
             }
-            System.out.print("\n");
+            i++;
         }
-}
+        System.out.println(sum);
+    }
 }
